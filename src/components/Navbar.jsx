@@ -23,9 +23,9 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3" onClick={closeMenu}>
-            <img src="/logo.png" alt="Student's 1st Choice Logo" className="h-12 w-auto object-contain" />
-            <span className="font-bold text-xl text-brand-green tracking-tight hidden sm:block">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3" onClick={closeMenu}>
+            <img src="/logo.png" alt="Student's 1st Choice Logo" className="h-10 sm:h-12 w-auto object-contain" />
+            <span className="font-bold text-[15px] sm:text-xl text-brand-green tracking-tight leading-tight">
               Student's <span className="text-brand-gold">1st</span> Choice
             </span>
           </Link>
