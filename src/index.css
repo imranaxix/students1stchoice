@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .glassmorphism {
+        @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-glass;
+    }
+    .btn-primary {
+        @apply bg-brand-gold text-brand-green font-semibold py-3 px-6 rounded-xl hover:bg-yellow-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300;
+    }
+    .btn-secondary {
+        @apply bg-transparent border-2 border-brand-green text-brand-green font-semibold py-3 px-6 rounded-xl hover:bg-brand-green hover:text-white transition-all duration-300;
+    }
+}

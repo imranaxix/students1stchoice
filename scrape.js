@@ -1,0 +1,1 @@
+const https = require('https'); https.get('https://stundents-1st-choice.github.io/UniformsSweater/', (res) => { let data = ''; res.on('data', d => data += d); res.on('end', () => { const matches = [...data.matchAll(/<div class=\"pro\">[\s\S]*?<img src=\"([^\"]+)\"[\s\S]*?<h5>(.*?)(?:<\/h5>)/g)]; console.log(JSON.stringify(matches.map(m=>({img: m[1], name: m[2]})))); }); });
